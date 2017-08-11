@@ -7,13 +7,13 @@ public class Resource{
     public String author;
     public boolean isAvailable;
     public static int temp = 0;
-    public int resourceID;
+    public String resourceID = "R";
 
     public Resource(String n, String a, boolean b) {
         name = n;
         author = a;
         isAvailable = b;
-        resourceID = temp;
+        resourceID += temp;
         temp++;
     }
 
@@ -41,7 +41,7 @@ public class Resource{
         isAvailable = available;
     }
 
-    public int getResourceID() {
+    public String getResourceID() {
         return resourceID;
     }
 }

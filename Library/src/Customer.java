@@ -5,7 +5,7 @@ import java.util.ArrayList;
  */
 public class Customer extends Person{
 
-    ArrayList<Resource> rList = new ArrayList<>();
+    ArrayList<String> rList = new ArrayList<>();
 
     public Customer(String n) {
         super(n);
@@ -16,7 +16,7 @@ public class Customer extends Person{
         rList = l;
     }
 
-    public void addToList(Resource r) {
+    public void addToList(String r) {
         rList.add(r);
     }
 
@@ -29,6 +29,11 @@ public class Customer extends Person{
     }
 
     public String toString() {
-        return name + ": " + userID + "; ";
+        String s = "Customer, " + name + ", " + rList + ", " + userID;
+        for(int i = 0; i < rList.size(); i++) {
+            s += rList.get(i);
+            s += ", ";
+        }
+        return s;
     }
 }

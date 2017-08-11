@@ -47,4 +47,8 @@ public class Book extends Resource{
     public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
+
+    public String toString() {
+        return "Book, " + name + ", " + author + ", " + isAvailable + ", " + genre + ", " + numPages + ", " + publisher + ", " + isbn;
+    }
 }

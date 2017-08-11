@@ -18,8 +18,8 @@ public class TestCustomer {
     @Before
     @Test
     public void testAddToList() {
-        c.addToList(r);
-        c.addToList(r2);
+        c.addToList(r.getResourceID());
+        c.addToList(r2.getResourceID());
         assertEquals(2, c.rList.size());
     }
 

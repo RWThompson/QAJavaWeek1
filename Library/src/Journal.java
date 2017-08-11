@@ -21,4 +21,8 @@ public class Journal extends Resource{
     public void setIssueNum(int issueNum) {
         this.issueNum = issueNum;
     }
+
+    public String toString() {
+        return "Journal, " + name + ", " + author + ", " + isAvailable + ", " + issueNum;
+    }
 }

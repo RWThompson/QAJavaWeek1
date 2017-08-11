@@ -4,12 +4,12 @@
 public class Person{
 
     public static int temp = 0;
-    public int userID;
+    public String userID = "P";
     public String name;
 
     public Person(String n) {
         name = n;
-        userID = temp;
+        userID += temp;
         temp++;
     }
 
@@ -21,7 +21,7 @@ public class Person{
         this.name = name;
     }
 
-    public int getUserID() {
+    public String getUserID() {
         return userID;
     }
 }

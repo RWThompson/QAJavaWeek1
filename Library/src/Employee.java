@@ -22,4 +22,7 @@ public class Employee extends Person{
         this.jobTitle = jobTitle;
     }
 
+    public String toString() {
+        return "Employee, " + name + ", " + userID + ", " + jobTitle;
+    }
 }

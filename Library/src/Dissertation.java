@@ -31,4 +31,8 @@ public class Dissertation extends Resource{
     public void setCodePresent(boolean codePresent) {
         this.codePresent = codePresent;
     }
+
+    public String toString() {
+        return "Dissertation, " + name + ", " + author + ", " + isAvailable + ", " + percentage + ", " + codePresent;
+    }
 }
